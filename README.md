@@ -6,3 +6,4 @@
 [PowerUp](/PowerUp/README.md) Elementy interfejsu graficznego<br />
 [BTService/BTTask/BehaviorTree](/BT/README.md) Serwisy, taski oraz drzewka decyzyjne AI<br />
 
+[Github](https://github.com/grzedzicki/ShooterUE4) Wszystkie pliki oraz zdjęcia użyte na tej stronie
