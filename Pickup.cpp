@@ -71,7 +71,6 @@ void APickup::NotifyActorBeginOverlap(AActor* OtherActor)
 		PowerUpInstance->ActivatePowerup(OtherActor);
 		PowerUpInstance = nullptr;
 
-		// Set Timer to respawn powerup
 		GetWorldTimerManager().SetTimer(TimerHandle_RespawnTimer, this, &APickup::Respawn, CooldownDuration);
 	}
 }
