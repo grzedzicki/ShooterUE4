@@ -14,6 +14,7 @@
 
 /*
 * Ustawanie domyślnych wartości dla tego aktora
+* Można je zmienić w BP
 */
 AWeaponActor::AWeaponActor()
 {
