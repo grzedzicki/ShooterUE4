@@ -2,7 +2,7 @@
 
 [MainCharacter](/MainCharacter/README.md) Parent dla wszystkich postaci, zarówno gracza jak i AI<br />
 [Weapon](/Weapon/README.md) Parent dla wszystkich broni w grze<br />
-[Widgety/UI](https://github.com/grzedzicki/NewOrder/edit/main/Blueprint/README.md) Elementy interfejsu graficznego<br />
+[Widgety/UI](https://github.com/grzedzicki/NewOrder/blob/main/Blueprint/Widget/README.md) Elementy interfejsu graficznego<br />
 [PowerUp](/PowerUp/README.md) Elementy interfejsu graficznego<br />
 [BTService/BTTask/BehaviorTree](/BT/README.md) Serwisy, taski oraz drzewka decyzyjne AI<br />
 
