@@ -24,13 +24,10 @@ protected:
 
 	void SpawnBotTimerElapsed();
 
-	// Start Spawning Bots
 	void StartWave();
-
-	// Stop Spawning Bots
+	
 	void EndWave();
 
-	// Set timer for next startwave
 	void PrepareForNextWave();
 
 	void CheckWaveState();
@@ -45,7 +42,6 @@ protected:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "MP_GameMode")
 		void StartWaveForBP();
 
-	// Hook for BP to spawn a single bot
 	UFUNCTION(BlueprintImplementableEvent, Category = "MP_GameMode")
 		void SpawnNewBot();
 
@@ -58,7 +54,6 @@ protected:
 
 	FTimerHandle TimerHandle_NextWaveStart;
 
-	// Bots to spawn in current wave
 	int32 NrOfBotsToSpawn;
 
 	UPROPERTY(BlueprintReadWrite, Category = "MP_GameMode")
