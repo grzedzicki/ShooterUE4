@@ -11,7 +11,7 @@ void AMP_GameState::SetWaveStatus(EWaveStatus NewState)
 		EWaveStatus OldStatus = WaveStatus;
 
 		WaveStatus = NewState;
-		// Call on server
+		
 		OnRep_WaveStatus(OldStatus);
 	}
 }
