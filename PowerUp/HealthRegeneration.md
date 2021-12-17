@@ -11,4 +11,4 @@ Wygląd:
 Blueprint:  
 
 <iframe width=1280 height=650 src="https://blueprintue.com/render/f32t51v-/" scrolling="no" allowfullscreen></iframe>
-[PDF]()
+
