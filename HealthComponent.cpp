@@ -64,7 +64,6 @@ void UHealthComponent::HandleTakeDamage(AActor* DamagedActor, float Damage, cons
 
 	UE_LOG(LogTemp, Log, TEXT("Health: %s"), *FString::SanitizeFloat(Health));
 
-	//bIsDeadMP = Health <= 0.0f;
 	if (Health <= 0.0f) bIsDeadMP = true;
 	OnHealthChanged.Broadcast(this, Health, Damage, DamageType, InstigatedBy, DamageCauser);
 
@@ -106,7 +105,6 @@ bool UHealthComponent::IsFriendly(AActor* ActorA, AActor* ActorB)
 {
 	if (ActorA == nullptr || ActorB == nullptr)
 	{
-		// Assume Friendly
 		return true;
 	}
 
@@ -115,7 +113,6 @@ bool UHealthComponent::IsFriendly(AActor* ActorA, AActor* ActorB)
 
 	if (HealthCompA == nullptr || HealthCompB == nullptr)
 	{
-		// Assume friendly
 		return true;
 	}
 
