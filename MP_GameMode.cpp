@@ -8,6 +8,9 @@
 #include "TimerManager.h"
 #include "EngineUtils.h"
 
+/*
+  Domyślne ustawienia dla Tower Defense
+*/
 AMP_GameMode::AMP_GameMode()
 {
 	TimeBetweenWaves = 2.0f;
@@ -34,7 +37,9 @@ void AMP_GameMode::Tick(float DeltaSeconds)
 	CheckAnyPlayerAlive();
 }
 
-
+/*
+  Spawn przeciwników, odliczenie ich ilości
+*/
 void AMP_GameMode::SpawnBotTimerElapsed()
 {
 	SpawnNewBot();
@@ -47,6 +52,10 @@ void AMP_GameMode::SpawnBotTimerElapsed()
 	}
 }
 
+/*
+  Poinformowanie odpowiadającego Blueprinta o początku nowej fali
+  Inkrementacja fali, ustalenie ilości przeciwników do odrodzenia, start timera dla przeciwników
+*/
 void AMP_GameMode::StartWave()
 {
 	StartWaveForBP();
@@ -64,6 +73,9 @@ void AMP_GameMode::StartWave()
 	SetWaveStatus(EWaveStatus::WaveInProgress);
 }
 
+/*
+  Czyszczenie timera danej fali, ustalenie statusu fali
+*/
 void AMP_GameMode::EndWave()
 {
 	GetWorldTimerManager().ClearTimer(TimerHandle_BotSpawner);
@@ -71,6 +83,9 @@ void AMP_GameMode::EndWave()
 	SetWaveStatus(EWaveStatus::WaitingToComplete);
 }
 
+/*
+  Start timera dla nowej fali, odrodzenie zmarłych graczy
+*/
 void AMP_GameMode::PrepareForNextWave()
 {
 	GetWorldTimerManager().SetTimer(TimerHandle_NextWaveStart, this, &AMP_GameMode::StartWave, TimeBetweenWaves, false);
@@ -80,6 +95,9 @@ void AMP_GameMode::PrepareForNextWave()
 	RestartDeadPlayers();
 }
 
+/*
+  Funkcja wywoływana cyklicznie sprawdzająca czy wszyscy przeciwnicy zostali pokonani
+*/
 void AMP_GameMode::CheckWaveState()
 {
 	bool bIsPreparingForWave = GetWorldTimerManager().IsTimerActive(TimerHandle_NextWaveStart);
@@ -115,6 +133,9 @@ void AMP_GameMode::CheckWaveState()
 	}
 }
 
+/*
+  Ustalenie statusu fali
+*/
 void AMP_GameMode::SetWaveStatus(EWaveStatus NewStatus)
 {
 	AMP_GameState* GS = GetGameState<AMP_GameState>();
@@ -124,6 +145,9 @@ void AMP_GameMode::SetWaveStatus(EWaveStatus NewStatus)
 	}
 }
 
+/*
+  Funkcja sprawdzająca czy są jeszcze żyjący gracze, jeśli nie, koniec gry
+*/
 void AMP_GameMode::CheckAnyPlayerAlive()
 {
 	for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
@@ -143,6 +167,9 @@ void AMP_GameMode::CheckAnyPlayerAlive()
 	GameOver();
 }
 
+/*
+  W przypadku końca gry, wysłanie do Blueprint o tym informacji
+*/
 void AMP_GameMode::GameOver()
 {
 	EndWave();
@@ -156,6 +183,9 @@ void AMP_GameMode::GameOver()
 	}
 }
 
+/*
+  Funkcje dla Blueprint
+*/
 void AMP_GameMode::GameOverForBP_Implementation()
 {
 }
