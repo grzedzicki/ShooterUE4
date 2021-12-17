@@ -5,4 +5,4 @@
   
 [HealthRegeneration](HealthRegeneration.md) Apteczka<br />
 [Superspeed](Superspeed.md) Przyspieszenie<br />
-[Amunicja](Ammunition.md) Amunicja<br />
+[Refill](Ammunition.md) Amunicja<br />
