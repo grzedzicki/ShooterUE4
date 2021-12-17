@@ -24,7 +24,6 @@ protected:
 		float PowerupInterval;
 
 	// 
-	/* Total times we apply the powerup effect */
 	UPROPERTY(EditDefaultsOnly, Category = "Powerups")
 		int32 TotalNrOfTicks;
 
