@@ -1,6 +1,6 @@
 [Powrót](../README.md)<br />
  
-[Unreal/C++](https://github.com/grzedzicki/ShooterUE4/tree/main/MainCharacter)
+[Unreal/C++](https://github.com/grzedzicki/ShooterUE4/tree/main/MainCharacter) Kod źródłowy
   
 Blueprint:  
 CTRL+SCROLL oddalenie/przybliżenie  
