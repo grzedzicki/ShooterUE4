@@ -1,6 +1,6 @@
 [Powrót](../README.md)<br />
  
-[Unreal/C++](https://github.com/grzedzicki/ShooterUE4/tree/main/Weapon)
+[Unreal/C++](https://github.com/grzedzicki/ShooterUE4/tree/main/Weapon) Kod źródłowy
   
 Blueprint:  
 
