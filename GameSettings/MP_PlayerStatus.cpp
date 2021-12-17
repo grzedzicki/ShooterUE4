@@ -4,7 +4,7 @@
 #include "MP_PlayerStatus.h"
 
 /*
-* Liczenie punktów.
+* Liczenie punktÃ³w.
 */
 
 void AMP_PlayerStatus::AddScore(float ScoreDelta)
