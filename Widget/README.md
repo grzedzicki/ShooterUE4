@@ -4,4 +4,4 @@
 [MainMenuWidget](MainMenuWidget.md) Menu Głowne<br />
 [SettingsWidget](SettingsWidget.md) Ekran ustawień<br />
 [PauseWidget](PauseWidget.md) Ekran pauzy<br />
-[HealthWidget](PauseWidget.md) UI zdrowia<br />
+[HealthWidget](HealthWidget.md) UI zdrowia<br />
