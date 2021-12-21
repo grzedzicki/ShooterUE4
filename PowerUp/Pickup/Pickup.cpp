@@ -44,7 +44,7 @@ void APickup::Respawn()
 {
 	if (PowerUpClass == nullptr)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("PowerUpClass is nullptr in %s. Please update your Blueprint"), *GetName());
+		UE_LOG(LogTemp, Warning, TEXT("PowerUp NULL"), *GetName());
 		return;
 	}
 
