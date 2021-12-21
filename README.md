@@ -1,5 +1,5 @@
 # ShooterUE4
-[Strona Główna](https://grzedzicki.github.io/ShooterUE4/) Github Page
+[Strona Główna](https://grzedzicki.github.io/ShooterUE4/) Github Page<br />
 [MainCharacter](/MainCharacter/README.md) Parent dla wszystkich postaci, zarówno gracza jak i AI<br />
 [Weapon](/Weapon/README.md) Parent dla wszystkich broni w grze<br />
 [Widgety/UI](/Widget/README.md) Elementy interfejsu graficznego<br />
