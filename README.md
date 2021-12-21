@@ -7,5 +7,5 @@
 [BTService/BTTask/BehaviorTree](/BT/README.md) Serwisy, taski oraz drzewka decyzyjne AI<br />
 [GameSettings](/GameSettings/README.md) GameMode, GameState, GameInstance<br />
 
-[Github](https://github.com/grzedzicki/ShooterUE4) Wszystkie pliki oraz zdjęcia użyte na tej stronie
-[Gra](https://drive.google.com/file/d/1BN9h0tFj6CCVj1jQGZcUJJSszosvIkIQ/view) .7z z plikami gotowej gry
+[Github](https://github.com/grzedzicki/ShooterUE4) Wszystkie pliki oraz zdjęcia użyte na tej stronie<br />
+[Gra](https://drive.google.com/file/d/1BN9h0tFj6CCVj1jQGZcUJJSszosvIkIQ/view) .7z z plikami gotowej gry<br />
